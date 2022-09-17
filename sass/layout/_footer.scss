@@ -1,0 +1,267 @@
+.footer{
+    
+    // background-image: url('../../images/footer_bg.svg');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    background-image: linear-gradient(rgba(18, 31, 38, 0.12),rgba(14, 177, 235, 0.26));
+    .container{
+        padding-top: 3.6rem;
+        padding-bottom: 3.4rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer_block{
+        margin-right: 10.1rem;
+        a{
+            display: block;
+        }
+        .footer_block_left{
+           a{
+                &{
+                    margin-bottom: 4.2rem;
+                }
+           } 
+        }
+        .footer_block_right{
+            a{
+                &{
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+    }
+    .footer_form{
+        margin-right: 10.2rem;
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        h6{
+            @include footerGrey_text;
+            padding-bottom: 1.2rem;
+        }
+        form{
+            textarea{
+                background-color: transparent;
+                border: 2px solid rgba(18, 31, 38,0.12);
+                border-radius: 12px;
+                padding: 1.4rem 1.8rem;
+                width: 345px;
+                height: 124px;
+                @include font500;
+                font-size: 1.2rem;
+                line-height: 1.4rem;
+                margin-bottom: 2.2rem;
+                outline: none;
+                &::placeholder{
+                    @include font500;
+                    font-size: 1.2rem;
+                    line-height: 1.4rem;
+                    color:#2222226B;
+                    ;
+                }
+            }
+            input[type=submit]{
+                @include lenta_button;
+                display: block;
+            }
+        }
+    }
+    .footer_content{
+        margin-right: 14.2rem;
+        .web_site{
+            @include footerGrey_text;
+        }
+        ul{
+            padding-top: 2.5rem;
+            li{
+                &:not(:last-child){
+                    padding-bottom: 1.7rem;
+                }
+            }
+            a{
+                @include footerGrey_text;
+                color: $colorBlack;
+            }
+        }
+    }
+    .social{
+        margin-top: 3.2rem;
+        .social_title{
+            @include footerGrey_text;
+        }
+    }
+    .social_networks{
+        display: flex;
+        margin-top: 1.2rem;
+    }
+    .social_fig{
+        display: inline-block;
+        width: 34px;
+        height: 34px;
+        @include flex;
+        background-image: url('../../images/facebook_ellips.svg');
+        &:not(:last-child){
+            margin-right: 3rem;
+        }
+    }
+    .footer_contacts{
+        .contact{
+            &:not(:last-child){
+                margin-bottom: 3.1rem;
+            }
+            p{
+                @include footerGrey_text;
+                padding-bottom: 11px;
+            }
+            a{
+                @include font500;
+                font-size: 2.8rem;
+                line-height: 3.3rem;
+                color: $color;
+            }
+        }
+    }
+    #social_block_mobile{
+        display: none;
+    }
+    .footer_line{
+        width: 100%;
+        height: 2px;
+        background-color: rgba(18, 31, 38, 0.12);
+    }
+    .footer_item{
+        .container{
+            @include flexW;
+            padding-top: 3.4rem;
+            padding-bottom: 3.4rem;
+        }
+        p{
+            @include footerGrey_text;
+            color: $black;
+        }
+    }
+}
+
+// Responsive
+// Mobile
+@media screen and (max-width:767px) {
+    .footer{
+        background-image: none;
+        background-color: rgba(18, 31, 38, 0.12);
+    }
+    .footer .footer_block{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .footer_block_left{
+        img{
+            width: 150px;
+            height: 50px;
+        }
+    }
+    .footer_block_right{
+        img{
+            // width: 155px;
+            height: 40px;
+        }
+    }
+    .footer .footer_block,.footer .footer_form,.footer .footer_content{
+        margin-right: 0;
+        margin-bottom: 5rem;
+    }
+    .footer .footer_block{
+        flex-direction: column;
+        justify-content: unset;
+        margin-bottom: 2.8rem;
+    }
+    .footer .footer_form{
+        width: 100%;
+        display: none;
+    }
+    .footer .footer_form .container{
+        align-items: unset;
+    }
+    .footer .footer_form form textarea{
+        width: 100%;
+        height: auto;
+    }
+    .footer .footer_content{
+        display: inline;
+        justify-content: unset;
+        // width: 100%;
+        padding-right: 4.5rem;
+    }
+    .footer .footer_content .social{
+        margin-top: 0;
+        display: none;
+    }
+    .footer .footer_content .social .social_title{
+        text-align: center;
+    }
+    .footer .footer_content .social_networks{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer .footer_content .social_fig:not(:last-child){
+        margin-bottom: 2rem;
+    }
+    .footer .footer_contacts .contact p{
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+    }
+    .footer .footer_contacts .contact a{
+        font-size: 2rem;
+        line-height: 2.4rem;
+        color: #1C314E;
+    }
+    .footer .footer_contacts .contact:not(:last-child){
+        margin-bottom: 1.2rem;
+    }
+    .footer .footer_content .social_fig{
+        margin-right: 0 !important;
+    }
+    .footer .social{
+        margin-top: 0;
+    }
+    .footer #social_block_mobile{
+        display: block;
+        width: 100%;
+    }
+    .footer .footer_item .container{
+        justify-content: unset;
+        text-align: center;
+        align-items: unset;
+        flex-direction: column;
+    }
+    .footer .footer_item p{
+        padding-bottom: 2rem;
+        text-align: center;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        color: #0C1D32;
+        opacity: 0.72;
+    }
+}
+
+// Planshet
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .footer .container{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .footer .footer_block{
+        margin-bottom: 3rem;
+        margin-right: 0;
+    }
+    .footer .footer_form,.footer .footer_content{
+        margin-right: 0;
+    }
+    .footer .footer_form form textarea{
+        width: 310px;
+    }
+}

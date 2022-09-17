@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arzoni bizdaa</title>
+    <link rel="icon" href="images/logo.svg" type="images/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Modal window - open -->
+    <div class="modal_window" id="modal_cooperation">
+        <div class="modal_container_big">
+            <div class="modal_container">
+                <div class="modal_block">
+                    <div class="modal_content">
+                        <h4>Hamkorlik uchun:</h4>
+                        <div class="modal_content_item1">
+                            <a href="tel:+998(98) 270-20-20">98 270 20 20</a>
+                            <p>Kamoliddin Ikromiddinov<span>(Raxbar)</span></p>
+                        </div>
+                        <div class="modal_content_item2">
+                            <a href="tel:+998(98) 270-00-84">98 270 00 84<a>
+                            <p>Baxtiyor Sattorov<span>(Ta'minotchi)</span></p>
+                        </div>
+                        <img src="./images/closed.png" alt="close icon" class="close" id="close_md_cooperation">
+                        <img src="./images/Raspberry.H03.png" class="strawberry" alt="strawberry image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal window - close -->
+
+    <!-- Modal to Order Window - open -->
+    <div class="modal_window" id="modal_order">
+        <div class="modal_container_big">
+            <div class="modal_container">
+                <div class="modal_block">
+                    <div class="modal_content">
+                        <h4>
+                            Hamkorlik uchun:<a href="tel:+998-97-977-52-24" class="tel_phone">97 977 52 24</a><br>
+                            Ma’lumotlaringizni qoldiring<br>
+                            biz siz bilan bog’lanamiz
+                        </h4>
+                        <div class="modal_form">
+                            <form action="handler.php" method="post">
+                                <input type="text" name="user-name" id="" placeholder="Ismingiz" required>
+                                <input type="tel" name="user-tel" id="" placeholder="Tel.raqamingiz" required>
+                                <input type="submit" value="Buyurtma berish">
+                            </form>
+                        </div>
+                        <img src="./images/closed.png" alt="close icon" class="close" id="close_md_order">
+                        <img src="./images/Raspberry.H03.png" class="strawberry" alt="strawberry image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal to Order Window - close -->
+
+    <!-- header - open -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="Logo" title="Logo">
+                </div>
+                <div class="nav_main">
+                    <div class="nav_menu">
+                        <ul>
+                            <li><a href="#about_id" id="about_us">Biz haqimizda</a></li>
+                            <li><a href="#products_id" id="products">Mahsulotlar</a></li>
+                            <li><a href="#section_id" id="section">Ustunliklar</a></li>
+                            <li><a href="#contact_id" id="contact">Kontaktlar </a></li>
+                        </ul>
+                    </div>
+                    <div class="nav_item">
+                        <p>Toshkent:</p>
+                        <a href="tel:+998(55) 500-90-60">55 500 90 60</a>
+                        <img src="./images/Vector.svg" alt="Vector_arrow" class="click_arrow">
+                        <div class="nav_item_list">
+                            <div class="list1 list">
+                                <p>Andijon:</p>
+                                <a href="tel:+998(55) 500-90-60">55 500 90 60</a>
+                            </div>
+                            <div class="list2 list">
+                                <p>Buxoro:</p>
+                                <a href="tel:+998(55) 500-90-60">55 500 90 60</a>
+                            </div>
+                            <div class="list3 list">
+                                <p>Termiz:</p>
+                                <a href="tel:+998(55) 500-90-60">55 500 90 60</a>
+                            </div>
+                            <div class="list4 list">
+                                <p>Farg'ona:</p>
+                                <a href="tel:+998(55) 500-90-60">55 500 90 60</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav_languages">
+                        <div class="nav_lang_head">
+                            <p class="click_lang">UZ</p>
+                            <img src="./images/Vector.svg" alt="Vector_arrow" class="click_arrow_lang">
+                        </div>
+                        <div class="lang_list">
+                            <a href="#">RU</a>
+                            <a href="#">EN</a>
+                        </div>
+                    </div>
+                    <div class="for_cooperation">
+                        Hamkorlik uchun
+                    </div>
+                </div>
+                
+                <div class="burger">
+                    <span class="line_1"></span>
+                    <span class="line_2"></span>
+                    <span class="line_3"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- header - close -->
+
+    <!-- main - open -->
+    <main>
+        <div class="main_top">
+            <div class="container">
+                <div class="element_left">
+                    <h1>Barcha turdagi salqin ichimliklarni<br>
+                        arzon narxlarda 1 soat ichida<br>
+                        BEPUL yetkazib beramiz
+                    </h1>
+                    <p>
+                        Smartfoningiz orqali Online tarzda ulgurji narxlarda do’kon, kafe, restoran,<br>
+                        ofis, mehmonxona va xonadonlarga 500 turdan ortiq salqin ichimliklarni<br>
+                        yetkazib berish xizmati.
+                    </p>
+                    <div class="element_buttons">
+                        <a class="to_order">Buyurtma berish</a>
+                        <a href="#" class="watch_the_video">Videoni ko’rish</a>
+                    </div>
+                </div>
+                <div class="element_right">
+                    <img src="./images/boldi ee.png" alt="boldi ee image">
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="about_us" id="about_id">
+        <div class="main_middle">
+            <div class="container">
+                <div class="middle_left">
+                    <img src="./images/Iphone2.png" alt="Iphone image">
+                </div>
+                <div class="middle_right">
+                    <h4>Arzoni bizda haqida</h4>
+                    <p>
+                        Mijozlarga inovasion texnologiyalar orqali qisqa vaqtda<br> arzon va shaffof narxlarda qulay assortiment va miqdorda<br> maxsulotlarni yetkazib berish orqali xizmat ko‘rsatish . 
+                    </p>
+                    <h6>To‘liq mahsulot turlari bilan tanishish uchun ilovani yuklab oling:</h6>
+                    <a href="https://apps.apple.com/uz/app/arzoni-bizda/id1524943054?l=ru" class="download_the_app">Ilovani yuklab olish</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="products" id="products_id">
+        <div class="main_bottom">
+            <div class="container">
+                <div id="main_circle">
+                    <div class="circle_block_one">
+                        <div class="circle_content">
+                            <div class="circle">
+                                <h4>4</h4>
+                            </div>
+                            <div class="circle_item">
+                                O‘zbekiston Respublikasining<br>
+                                4ta viloyatida Toshkent, Andijon, Namangan<br>
+                                va Buxoroda faoliyat olib boramiz
+                            </div>
+                        </div>
+                        <div class="circle_content">
+                            <div class="circle">
+                                <h4>21</h4>
+                            </div>
+                            <div class="circle_item">
+                                Hududlardagi<br> 
+                                Filiallarimiz soni
+                            </div>
+                        </div>
+                        <div class="circle_content">
+                            <div class="circle">
+                                <h4>150</h4>
+                            </div>
+                            <div class="circle_item">
+                                Kishilik jamoa
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="circle_block_two">
+                        <div class="circle_content">
+                            <div class="circle">
+                                <h4>10.2k</h4>
+                            </div>
+                            <div class="circle_item">
+                                Doimiy mijozlar
+                            </div>
+                        </div>
+                        <div class="circle_content">
+                            <div class="circle">
+                                <h4>500</h4>
+                            </div>
+                            <div class="circle_item">
+                                500 turdan ortiq salqin<br>
+                                ichimliklar
+                            </div>
+                        </div>
+                        <div class="circle_content">
+                            <div class="circle">
+                                <h4>50+</h4>
+                            </div>
+                            <div class="circle_item">
+                                50dan ortiq ta’minotchilar<br>
+                                bilan ishlaymiz
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="main_circle_mobile">
+                    <div class="circle_block_one">
+                        <div class="circle_content">
+                            <div class="circle">
+                                <h4>4</h4>
+                            </div>
+                            <div class="circle_item">
+                                O‘zbekiston Respublikasining<br>
+                                4ta viloyatida Toshkent, Andijon, Namangan<br>
+                                va Buxoroda faoliyat olib boramiz
+                            </div>
+                        </div>
+                        <div class="circle_content">
+                            <div class="circle">
+                                <h4>21</h4>
+                            </div>
+                            <div class="circle_item">
+                                Hududlardagi<br> 
+                                Filiallarimiz soni
+                            </div>
+                        </div>
+                        
+                    </div>
+        
+                    <div class="circle_block_two">
+                        <div class="circle_content">
+                            <div class="circle">
+                                <h4>150</h4>
+                            </div>
+                            <div class="circle_item">
+                                Kishilik jamoa
+                            </div>
+                        </div>
+                        <div class="circle_content">
+                            <div class="circle">
+                                <h4>10.2k</h4>
+                            </div>
+                            <div class="circle_item">
+                                Doimiy mijozlar
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="circle_block_there">
+                        <div class="circle_content">
+                            <div class="circle">
+                                <h4>500</h4>
+                            </div>
+                            <div class="circle_item">
+                                500 turdan ortiq salqin<br>
+                                ichimliklar
+                            </div>
+                        </div>
+                        <div class="circle_content">
+                            <div class="circle">
+                                <h4>50+</h4>
+                            </div>
+                            <div class="circle_item">
+                                50dan ortiq ta’minotchilar<br>
+                                bilan ishlaymiz
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- main - close -->
+
+    <!-- content - open -->
+    <div class="content">
+        <div class="container">
+            <div class="content_left">
+                <h3>
+                    Ikki tomonlama manfaatli hamkorlik qilishni<br>
+                    istasangiz biz bilan bog‘laning.
+                </h3>
+                <a class="contact_us">Biz bilan bog‘lanish</a>
+            </div>
+            <div class="content_right">
+                <a href="#"><img src="./images/logo.svg" alt="logo"></a>
+            </div>
+        </div>
+    </div>
+    <!-- content - close -->
+
+    <!-- section - open -->
+    <section class="section" id="section_id">
+        <div class="container">
+            <div class="section_title">
+                Bizning ustunlik taraflarimiz<br>
+                bilan tanishng
+            </div>
+            <div class="section_column">
+                <div class="section_column1">
+                    <div class="order_online">
+                        <img src="./images/phone.svg" alt="phone image">
+                        <h6>Online buyurtma</h6>
+                        <p>
+                            Istalgan vaqtda onlayn buyurtma<br>
+                            va uni bepul yetkazib berish<br> imkoniyatining borligi
+                        </p>
+                    </div>
+                    <div class="call_center">
+                        <img src="./images/telefoniya.svg" alt="Call image">
+                        <h6>Call center</h6>
+                        <p>Hududlar aro yagona raqam orqali<br> buyurtma berish imkoni</p>
+                    </div>
+                    <div class="affordable_prices">
+                        <img src="./images/money.svg" alt="money image">
+                        <h6>Hamyonbop narxlar</h6>
+                        <p>Maxsulotlar narxlarini shaffofligini<br> kuzatish va solishtirish imkoni.</p>
+                    </div>
+                </div>
+                <div class="section_column2">
+                    <img src="./images/Front-Can copy.png" alt="pepsi image">
+                </div>
+                <div class="section_column3">
+                    <div class="other_products">
+                        <img src="./images/image 1696.svg" alt="glass image">
+                        <h6>Keng turdagi mahsulotlar</h6>
+                        <p>Talabingiz va tanlovingizga mos<br> 500dan ortiq salqin ichimliklar turining<br> mavjudligi</p>
+                    </div>
+                    <div class="warehouses_regions">
+                        <img src="./images/image 1628.svg" alt="home image">
+                        <h6>Xududlardagi 21 ta ombor</h6>
+                        <p>Kerakli zaxirani saqlash va o‘z vaqtida<br> mijozlarga tez yetkazib berish uchun<br> hududlarda 21 ta o‘z omborlariga ega</p>
+                    </div>
+                    <div class="working_time">
+                        <img src="./images/Group 36404.svg" alt="time image">
+                        <h6>Uzaytirilgan ish vaqti</h6>
+                        <p>
+                            12/7 kun davomida uzluksiz<br>
+                            xizmat ko‘rsatishning yo‘lga<br>
+                            qo‘yilganligi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="statistics">
+                <div class="container">
+                    <div class="statistics_left">
+                        <div class="statistics_image_block">
+                            <img src="./images/statistik rasm.png" alt="statistic image">
+                            <div class="city city_one">
+                                <p>Toshkent shahri</p>
+                                <img src="./images/toshkent_arrow.svg" alt="Arrow image" class="city_svg city_toshkent">
+                                <img src="./images/toshkent_arrow.png" alt="Arrow image" id="city_toshkent">
+                            </div>
+                            <div class="city city_two">
+                                <p>Andijon</p>
+                                <img src="./images/andijon_arrow.svg" alt="Arrow image" class="city_svg city_andijon">
+                                <img src="./images/andijon_arrow.png" alt="Arrow image" id="city_andijon">
+                            </div>
+                            <div class="city city_there">
+                                <p>Namangan</p>
+                                <img src="./images/namangan_arrow.svg" alt="Arrow image" class="city_svg city_namangan">
+                                <img src="./images/namangan_arrow.png" alt="Arrow image" id="city_namangan">
+                            </div>
+                            <div class="city city_fourth">
+                                <p>Buxoro</p>
+                                <img src="./images/buxoro_arrow.svg" alt="Arrow image" class="city_svg city_buxoro">
+                                <img src="./images/buxoro_arrow.png" alt="Arrow image" id="city_buxoro">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="statistics_right">
+                        <h4>
+                            Andijon bozoridagi ulushimiz<br> 
+                            <b>21%</b>ni tashkil qilib kelmoqda.
+                        </h4>
+                        <p>
+                            Bugungi kunda 4 ta viloyatning 12 ta shaharlarida arzon<br>
+                            narxlarda salqin ichimliklar bilan ta’minlab, buni yana-da<br>
+                            kengaytirishni maqsad qilganmiz. Ayni paytda Andijondagi<br>
+                            ulushimiz 21%ni, umumiy mijozlarimiz soni esa 10.000dan<br>
+                            ortiq buyurtmachilarni  tashkil qilmoqda. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section - close -->
+
+    <!-- block - open -->
+    <div class="block">
+        <div class="container">
+            <div class="block_left">
+                <h4>
+                    Salqin ichimliklarni arzon narxlarda tez<br>
+                    va ishonchli yetkazib beramiz.
+                </h4>
+                <a class="to_order" id="order">
+                    Buyurtma berish
+                </a>
+            </div>
+        </div>
+        <div class="block_right">
+            <img src="./images/Isuzu AZ -1 1.png" alt="Isuzu image">
+        </div>
+    </div>
+    <!-- block - close -->
+
+    <!-- article - open -->
+    <article class="article">
+        <div class="container">
+            <div class="article_title">
+                Biz buyurtmalarni qanday<br> qabul qilib olamiz?
+            </div>
+            <div class="article_content_top">
+                <div class="article_top_left">
+                    <img src="./images/011111.png" alt="phone image">
+                </div>
+                <div class="article_top_right">
+                    <h4>Buyurtma qabul qilinadi</h4>
+                    <p>
+                        Ilova orqali buyutmangiz va o‘z manzilingiz (lokatsiya)<br>
+                        qoldiriladi va buyurtmangiz qabul qilinganligi<br>
+                        haqida xabar keladi. 
+                    </p>
+                </div>
+            </div>
+            <img src="./images/Arrow 1.svg" alt="Arrow image" class="arrow_one">
+            <img src="./images/Arrow 1.png" alt="Arrow image" class="arrow_first">
+        </div>
+    </article>
+
+    <div class="article_continue">
+        <div class="article_content_middle">
+            <div class="container">
+                <div class="article_middle_left">
+                    <h4>
+                        Buyurtmangiz ombordan yo‘lga<br>
+                        chiqadi
+                    </h4>
+                    <p>
+                        Buyurtmangizni qaysi kuryer tomonidan qayerda<br> 
+                        kelayotganini buyurtmalar oynasi orqali<br>
+                        kuzatib borishingiz mumkun
+                    </p>
+                </div>
+                <div class="article_middle_right">
+                    <img src="./images/022222.png" alt="phone image">
+                </div>
+            </div>
+        </div>
+        <img src="./images/Arrow 2.svg" alt="Arrow image" class="arrow_two">
+        <img src="./images/Arrow 2.png" alt="Arrow image" class="arrow_second">
+        <div class="article_content_bottom">
+            <div class="container">
+                <div class="article_bottom_left">
+                    <img src="./images/03333.png" alt="phone image">
+                </div>
+                <div class="article_bottom_right">
+                    <h4>Mahsulot yetkaziladi</h4>
+                    <p>
+                        Buyurtmangiz 1 soat ichida yetib keladi va<br>
+                        tekshirib qabul qilib olingandan so‘ng<br>
+                        to‘lov amalga oshiriladi
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="contact" id="contact_id">
+        <div class="article_block">
+            <div class="container">
+                <div class="article_block_left">
+                    <h4>
+                        <b>1 soat</b> ichida bepul yetkazib<br>
+                        berish xizmati
+                    </h4>
+                    <p>
+                        Buyurtmalarni o’z vaqtida yetkazib berish uchun korxona<br> o‘zining avtotransportlariga ega:
+                    </p>
+                    <ul>
+                        <li><a href="#"><b>4ta ISUZU</b> avtomobili</a></li>
+                        <li><a href="#"><b>22ta DAMAS</b> avtomobili</a></li>
+                    </ul>
+                </div>
+                <div class="article_block_right">
+                    <img src="./images/f 1.png" alt="avto image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- article - close -->
+
+    <!-- aside - open -->
+    <aside class="aside">
+        <div class="container">
+            <div class="aside_content">
+                <h4>
+                    Salqin ichimliklarni arzon narxlarda Arzoni<br> Bizdadan xarid qiling va qimmatli bo‘lgan<br> vaqtingizni tejang
+                </h4>
+                <a class="to_order" id="order_other">Buyurtma berish</a>
+            </div>
+        </div>
+        <div class="aside_content_right">
+            <img src="./images/aside_image.png" alt="frukti image" class="aside_image1">
+            <img src="./images/aside_image2.png" alt="frukti image" class="aside_image2">
+        </div>
+    </aside>
+    <!-- aside - close -->
+
+    <!-- footer - open -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_block">
+                <div class="footer_block_left">
+                    <a href="#">
+                        <img src="./images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="footer_block_right">
+                    <a href="https://play.google.com/store/apps/details?id=uz.isti.shop&hl=en&gl=US">
+                        <img src="./images/google_play.svg" alt="google play">
+                    </a>
+                    <a href="https://apps.apple.com/uz/app/arzoni-bizda/id1524943054?l=ru">
+                        <img src="./images/app_store.svg" alt="App store">
+                    </a>
+                </div>
+            </div>
+            <div class="footer_form">
+                <div class="container">
+                    <h6>Fikr va takliflaringizni qoldiring:</h6>
+                    <form action="handler.php" method="post">
+                        <textarea name="text" id="" cols="30" rows="10" placeholder="Yozing..."></textarea>
+                        <input type="submit" value="Yuborish">
+                    </form>
+                </div>
+            </div>
+            <div class="footer_content">
+                <div class="footer_content_column1">
+                    <a href="#" class="web_site">Web sayt</a>
+                    <ul>
+                        <li><a href="#about_id">Biz haqimizda</a></li>
+                        <li><a href="#products_id">Mahsulotlar</a></li>
+                        <li><a href="#section_id">Ustunliklar</a></li>
+                        <li><a href="#contact_id">Kontaktlar</a></li>
+                    </ul>
+                </div>
+                <div class="footer_content_column2">
+                    <div class="social">
+                        <div class="social_title">Tarmoqlar</div>
+                        <div class="social_networks">
+                            <a href="#" target="_blank" class="social_fig facebook_network">
+                                <img src="./images/facebook.svg" alt="facebook icon">
+                            </a>
+                            <a href="#" target="_blank" class="social_fig telegram_network">
+                                <img src="./images/telegram.svg" alt="telegram icon">
+                            </a>
+                            <a href="https://instagram.com/arzonibizdauz?igshid=YmMyMTA2M2Y=" target="_blank" class="social_fig instagram_network">
+                                <img src="./images/instagram.svg" alt="instagram icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_contacts">
+                <div class="city_contact1 contact">
+                    <p>Toshkent:</p>
+                    <a href="tel:+998-(55)-500-90-60">+998 55 500 90 60</a>
+                </div>
+                <div class="city_contact2 contact">
+                    <p>Andijon:</p>
+                    <a href="tel:+998-(71)-200-97-00">+998 71 200 97 00</a>
+                </div>
+                <div class="city_contact3 contact">
+                    <p>Namangan:</p>
+                    <a href="tel:+998-(55)-500-50-70">+998 55 500 50 70</a>
+                </div>
+            </div>
+            <div class="social" id="social_block_mobile">
+                <div class="social_title">Tarmoqlar</div>
+                <div class="social_networks">
+                    <a href="#" target="_blank" class="social_fig facebook_network">
+                        <img src="./images/facebook.svg" alt="facebook icon">
+                    </a>
+                    <a href="#" target="_blank" class="social_fig telegram_network">
+                        <img src="./images/telegram.svg" alt="telegram icon">
+                    </a>
+                    <a href="https://instagram.com/arzonibizdauz?igshid=YmMyMTA2M2Y=" target="_blank" class="social_fig instagram_network">
+                        <img src="./images/instagram.svg" alt="instagram icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_line"></div>
+        <div class="footer_item">
+            <div class="container">
+                <p>© Arzoni bizda barcha huqular himoyalangan</p>
+                <a href="#">
+                    <img src="./images/mountain.svg" alt="mountain image">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- footer - close -->
+
+    <!-- Scroll to-top -->
+    <div class="box">
+        <a href="#" class="to_top">
+            <svg width="36px" height="36px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><path fill="#0EB1EB" d="M36 32a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v28z"></path><path fill="#FFF" d="M22 29v-9h7L18 7L7 20h7v9z"></path></svg>
+        </a>
+    </div>
+    <!-- Scroll to-top -->
+
+    <script src="js/script.js"></script>
+</body>
+</html>
